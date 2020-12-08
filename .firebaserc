@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "test-project-27823": {
+      "hosting": {
+        "todo": [
+          "test-project-27823"
+        ]
+      }
+    }
+  }
+}
