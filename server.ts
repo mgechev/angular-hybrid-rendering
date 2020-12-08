@@ -31,6 +31,12 @@ export function app(): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
+    const htmlPath = join(distFolder, req.path, 'index.html');
+    if (existsSync(htmlPath)) {
+      res.sendFile(htmlPath);
+      return;
+    }
+    // SSR
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 
