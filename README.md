@@ -1,3 +1,7 @@
+# Deprecated
+
+Angular Universal 11.1 now has native hybrid rendering support. All you need is run `yarn prerender` and start the server `node dist/.../server/main.js`, from there Universal will take care of the rest. Find an example [here](https://github.com/mgechev/hybrid-rendering).
+
 # Hybrid rendering
 
 This application performs prerendering (a.k.a. server-side generation or SSG) for static routes and server-side rendering (SSR) for dynamic routes.
